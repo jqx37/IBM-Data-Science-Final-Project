@@ -1,6 +1,7 @@
 Introduction:
 In this project, the task is finding what are the top 10 most popular venue categories in the two major cities, 
-Birmingham and Huntsville, in the state of Alabama, USA, by leveraging the venue data in Foursquare. Small business 
+Birmingham and Huntsville, in the state of Alabama, USA, by leveraging the venue data in Foursquare. Then, we will 
+use the data to determine where would be the best place to open a coffee shop in the two cities. Small business 
 is very popular in Alabama. However, it is difficult to find out what is the most popular business category in each city. 
 With the help of data science, it would be possible to classify the most popular venues in each neighborhood. Based on our 
 living experience, restaurants and fitness centers are very popular around Birmingham area. Though it is very difficult to 
@@ -11,4 +12,4 @@ Then I will find the most popular venues in Huntsville, AL, and compare them to 
 
 First, the geological information of Birmingham and Huntsville will be found by using Geocoder library. 
 Then, the number of venues of each category in both cities will be counted, and the foot trend of each category will be 
-found from the database of Foursquare. 
+found from the database of Foursquare.
