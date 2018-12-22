@@ -13,3 +13,5 @@ Then I will find the most popular venues in Huntsville, AL, and compare them to 
 First, the geological information of Birmingham and Huntsville will be found by using Geocoder library. 
 Then, the number of venues of each category in both cities will be counted, and the foot trend of each category will be 
 found from the database of Foursquare.
+
+Data used in the research:
