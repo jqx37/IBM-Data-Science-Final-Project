@@ -3,9 +3,7 @@ In this project, the task is finding what are the top 10 most popular venue cate
 Birmingham and Huntsville, in the state of Alabama, USA, by leveraging the venue data in Foursquare. Then, we will 
 use the data to determine where would be the best place to open a coffee shop in the two cities. Small business 
 is very popular in Alabama. However, it is difficult to find out what is the most popular business category in each city. 
-With the help of data science, it would be possible to classify the most popular venues in each neighborhood. Based on our 
-living experience, restaurants and fitness centers are very popular around Birmingham area. Though it is very difficult to 
-proof this point.
+With the help of data science, it would be possible to classify the most popular venues in each neighborhood. 
 
 Here, I would like to use my data science knowledge to find out what are the most popular venue categories in Birmingham, AL.
 Then I will find the most popular venues in Huntsville, AL, and compare them to the results that I found in Birmingham area.
@@ -15,6 +13,14 @@ Then, the number of venues of each category in both cities will be counted, and 
 found from the database of Foursquare.
 
 Data used in the research:
+Here is the list that shows all the data used in the project.
+1. Names of the cities
+2. Zip code of each neighborhood in the cities
+3. Latitude and Longitude of each neighborhood
+4. Top 10 most popular venue categories in each neighborhood in the cities
+5. 
+
 In order to collect the venue data of Birmingham metropolitan area, the zip code for each neighborhood need to be known. 
 In this project, the zip codes of the neighborhoods in Brimingham area are gathered from a website named "Zip codes to go".
-The URL of the website is: https://www.zipcodestogo.com/Alabama/.
+The URL of the website is: https://www.zipcodestogo.com/Alabama/. Then, the latitude and the longitude of each neighborhood can
+be determined by using the Geocoder library. 
