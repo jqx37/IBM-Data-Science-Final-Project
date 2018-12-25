@@ -17,10 +17,37 @@ Here is the list that shows all the data used in the project.
 1. Names of the cities
 2. Zip code of each neighborhood in the cities
 3. Latitude and Longitude of each neighborhood
-4. Top 10 most popular venue categories in each neighborhood in the cities
-5. 
+4. Latitude and Longitude of each venue
+5. Top 10 most popular venue categories in each neighborhood in the cities
 
-In order to collect the venue data of Birmingham metropolitan area, the zip code for each neighborhood need to be known. 
-In this project, the zip codes of the neighborhoods in Brimingham area are gathered from a website named "Zip codes to go".
-The URL of the website is: https://www.zipcodestogo.com/Alabama/. Then, the latitude and the longitude of each neighborhood can
-be determined by using the Geocoder library. 
+In order to collect the venue data of Birmingham and Huntsville metropolitan areas, the zip code for each neighborhood need to 
+be known. In this project, the zip codes of the neighborhoods in Brimingham area are gathered from a website 
+named "Zip codes to go". The URL of the website is: https://www.zipcodestogo.com/Alabama/. Then, the latitude and the 
+longitude of each neighborhood canbe determined by using the Geocoder library. By using the listed data, we can cluster the 
+neighborhoods in each city based on the most popular venue categories. 
+Therefore, we can determine what kind of small business may be popular in each neighborhood in the target cities.
+
+Methodology:
+In this project, I first gathered the geographical information of each neighborhood to determine the positions. Then, I cleaned the
+dataset, and dropped all of the duplicated neighborhoods based on the latitude and longitude information that I queried by using the
+Geocoder library. Due to the inaccuracy of the names of the neighborhoods in Birmingham and Huntsville, I would not be able to study
+all of the neighborhoods in the two cities. After cleaning up the geographical dataset, I only get two neighborhoods in Birmingham,
+which the zip codes are 35201 and 35242. Also, I get three neighborhoods in Huntsville, which the zip codes are 35801, 35807 and 35808.
+Since we do not know the target outputs, an unsupervised learning tachnique is more suitable in this case. In this project,
+I used K-Mean clustering method to cluster the similar neighborhoods in each city. The program that I wrote has the capability to compare the 
+user defined number of clusters and the number of neighborhoods in the target city. If the user defined number of clusters is greater
+than the number of neighborhood, then the program can change the number of clusters to the number of neighborhoods in the target city.
+Furthermore, the program has the capability to explore any give city in the state of Alabama, and give the clustering result of the 
+target city.
+
+The popularity of the venues are determined by the appearing frequency. The more frequently a kind of venue appears, the more popular 
+that kind of venue is. The program will automatically sort the venues by a descending order. Only the top 10 most popular venue 
+in each neighborhood will be displayed.
+
+Result:
+In Birmingham area, there are only two clusters. Based on the clustering result, it would be a good idea to open entertaining venues,
+such as bars or gyms in the area that has the zip code of 35201. On the other hand, in the area that has the zip code 35242, supermarkets
+and pet stores are more popular.
+In Huntsville area, there are also two clusters. The first cluster has one zip code, which is 35801. The second cluster has two zip
+codes, which are 35806 and 35807. In the first cluster, american restaurants and entertaining venues are very popular. For the
+second cluster, hotels, Sushi bars and BBQ places are popular.
