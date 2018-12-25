@@ -1,0 +1,10 @@
+Dear all,
+
+The program I wrote used K-Mean clustering method to cluster neighborhoods in any city in Alabama based on the similarity of the
+most popular venue categories in the neighborhoods. Users can define the target cities by changing the name and the zip codes in
+the main program. The program will output the map of each target city and display the clusters on the map with different colors.
+
+The program pulls zip codes in Alabama from a website called "Zip codes to go". The geographical data of each zip code is gathered 
+by using the Geocoder lib.
+
+You are welcomed to download the code. If you have any question, please feel free to leave a message to me. Thank you very much!
