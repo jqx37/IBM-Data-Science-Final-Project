@@ -15,4 +15,6 @@ Then, the number of venues of each category in both cities will be counted, and 
 found from the database of Foursquare.
 
 Data used in the research:
-There are several cities around Birmingham area, and the zip code are 
+In order to collect the venue data of Birmingham metropolitan area, the zip code for each neighborhood need to be known. 
+In this project, the zip codes of the neighborhoods in Brimingham area are gathered from a website named "Zip codes to go".
+The URL of the website is: https://www.zipcodestogo.com/Alabama/.
